@@ -21,12 +21,14 @@ movie_df[["budget"]].describe().applymap(lambda x: f"{x:,.0f}")
 10. The movie studio wants to determine who it should approach to act in its next movie production. Find the top 3 actors who appeared in the most top-rated movies.
 11. Create a data visualization that shows each country and the number of top-rated movies produced in it. Find the country that produced the most top-rated movies.
 movie_stats_df = movie_df['Country'].value_counts().to_frame()
+
 ![image](https://user-images.githubusercontent.com/43742200/224871526-3c8e8a00-7c33-4c0e-bf79-4a87a780272b.png)
 movie_stats_df.plot(kind='bar', y='Country', figsize=(5, 5));
 plt.title('Number of top-rated movies produced by country')
 plt.xlabel('Country')
 plt.ylabel('Count')
 plt.show()
+
 ![image](https://user-images.githubusercontent.com/43742200/224871585-da029c09-2f62-48b4-89c1-368b2e6a3b67.png)
 
 
