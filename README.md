@@ -3,11 +3,9 @@ Aanalyze data on previous movies from IMDb , a popular source for movie ratings,
 
 # About the Project
 1. Overview of IMDb movie ratings.
-2. Import the Movies Data set into a Pandas DataFrame.
-movie_df = pd.read_csv(r'Movie Assignment Data.csv')
+2. Import the Movies Data set into a Pandas DataFrame: movie_df = pd.read_csv(r'Movie Assignment Data.csv')
 
-3. Generate descriptive statistics for the budget of all the movies.
-movie_df[["budget"]].describe().applymap(lambda x: f"{x:,.0f}")
+3. Generate descriptive statistics for the budget of all the movies: movie_df[["budget"]].describe().applymap(lambda x: f"{x:,.0f}")
 
 4. Find out how many of the top-rated movies produced in the United States have a PG-13 rating.
 5. Find out whether any of the top-rated movies produced in 2014 were not produced in the United States.
